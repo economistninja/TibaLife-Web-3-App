@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -14,7 +14,7 @@ import Careers from './pages/Careers';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <Route path="/doctor" element={<DoctorDashboard />} />
         <Route path="/audit" element={<AMRAuditDashboard />} />
       </Routes>
-    </BrowserRouter>
+    
   );
 };
 
